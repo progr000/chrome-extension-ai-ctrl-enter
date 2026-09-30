@@ -1,0 +1,12 @@
+{
+  "manifest_version": 3,
+  "name": "Google AI send message by Ctrl+Enter (enter is new line now)",
+  "version": "1.0",
+  "content_scripts": [
+    {
+      "matches": ["https://*.google.com/*"],
+      "js": ["ctrl-enter.js"],
+      "run_at": "document_end"
+    }
+  ]
+}
